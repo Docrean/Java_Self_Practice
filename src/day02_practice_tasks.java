@@ -97,7 +97,7 @@ public class day02_practice_tasks {
             public static void main(String[] args) {
                 System.out.println("Hello World");
                                                             args = variable name
-                                                            (String[] = class name
+                                                            String[] = class name
                                                             main and println = Method name
                                                             out = Variable name
                                                             System = CLass name
