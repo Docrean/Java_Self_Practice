@@ -77,6 +77,28 @@ public class day01_practice_tasks {
         int num = 2;
         System.out.println("What is one more than one? " + num);
 
+        double Panzee;
+        Panzee = 28;
+        System.out.println("Panzee = " + Panzee);
 
+        float Pool = 21f;
+        System.out.println("Pool = " + Pool);
+
+        //FlightATicket
+
+        String from = "London", to = "Washington DC";
+        double ticketPrice = 200;
+
+        System.out.println("From " + from + " to " + to + " is $" + ticketPrice);
+
+       /*
+        package m09_my_first_program;
+        public class HelloWorld {
+            public static void main(String[] args) {
+                System.out.println("Hello World");
+
+        */
+            }
+        }
     }
 }
