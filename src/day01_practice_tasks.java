@@ -39,16 +39,23 @@ public class day01_practice_tasks {
         \r Return Moves the cursor to the beginning of the current line, not the next line
          */
 
-        String slash = "\"__/";
+        //coffee
+        String slash = "\\__/";
         String word = "Hello";
         String coffee ="\'coffee\'";
         String tea ="\'tea\'";
 
+        //stairs
         System.out.println(slash);
         System.out.println("He said " + word + ".");
         System.out.println("Would you like " + coffee + " or " + tea + "?");
 
 
+        System.out.println("*****\n\t*****\n\t\t*****\n\t\t\t*****\n\t\t\t\t*****");
+
+        //BuildOnce
+
+        System.out.println();
 
     }
 }
