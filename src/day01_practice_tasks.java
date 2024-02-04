@@ -67,6 +67,16 @@ public class day01_practice_tasks {
         name1 = "money";
         name2 = "mulla";
         name3 = "neaderthal";
-        
+
+        String BK = "JaVa is ";
+        String BK2 ="thee creme de la creme.";
+        String concat = BK + BK2;
+
+        System.out.println(concat);
+
+        int num = 2;
+        System.out.println("What is one more than one? " + num);
+
+
     }
 }
