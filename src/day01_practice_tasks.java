@@ -19,8 +19,10 @@ public class day01_practice_tasks {
 
         System.out.println("-----------------------------");
 
+        /*
         System.err.println("doogies:");
         System.err.println("; expected");
+         */
 
         //This is the way
 
@@ -55,7 +57,54 @@ public class day01_practice_tasks {
 
         //BuildOnce
 
-        System.out.println();
+        System.out.println("Platform independence is also called \"write once, run everywhere\".\n\"Java is to Javascript " +
+                "what care is to Carpet.\" ~ Chris Heilmann");
+
+        //EmployeeInfo
+
+        String name = "Name\t\t: Mike Smith";
+        String gender = "Gender\t\t: Male";
+        int age = 25;
+        String jobTitle = "Job Title\t: Java Developer";
+        String company = "Company\t\t: Apple Inc";
+        int salary = 11_000;
+
+        System.out.println(name);
+        System.out.println(gender);
+        System.out.println("Age\t\t\t: " + age);
+        System.out.println(jobTitle);
+        System.out.println(company);
+        System.out.println("Salary\t\t: " + salary);
+
+        //diamond
+
+        System.out.println("\t\t      ^");
+        System.out.println("\t\t     / \\");
+        System.out.println("\t\t    /   \\");
+        System.out.println("\t\t   /     \\");
+        System.out.println("\t\t  /       \\");
+        System.out.println("\t\t  ---------");
+        System.out.println("\t\t  \\       /");
+        System.out.println("\t\t   \\     /");
+        System.out.println("\t\t    \\   /");
+        System.out.println("\t\t     \\ /");
+        System.out.println("\t\t      v");
+
+        //tower
+
+        System.out.println("\t\t      *");
+        System.out.println("\t\t     * *");
+        System.out.println("\t\t    *   *");
+        System.out.println("\t\t   *     *");
+        System.out.println("\t\t  *********");
+        System.out.println("\t\t  *********");
+        System.out.println("\t\t  *       *");
+        System.out.println("\t\t  *       *");
+        System.out.println("\t\t  *********");
+        System.out.println("\t\t  *********");
+        System.out.println("\t\t  *       *");
+        System.out.println("\t\t  *       *");
+        System.out.println("\t\t  *********");
 
     }
 }
