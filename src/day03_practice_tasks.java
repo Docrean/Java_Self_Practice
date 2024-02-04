@@ -132,6 +132,32 @@ public class day03_practice_tasks {//<--class package to create java program
 
         int num4 = 10;
         int num5 = 15;
-        int temp = 5;
+        int temp;
+
+        temp = num5; //temp 5 is now num5 15
+        num5 = num4; //num5 15 is now num4 10
+        num4 = temp; //num4 10 is now temp 15
+
+        System.out.println("num4 = " + num4);
+        System.out.println("num5 = " + num5);
+
+        int num6 = 10;
+        int num7 = 15;
+        int num8 = 17;
+        int num9 = 20;
+        int temp2;
+
+        temp2 = num6;
+        num6 = num7;
+        num7 = temp2;
+        temp2 = num9;
+        num9 = num8;
+        num8 = temp2;
+
+        System.out.println("num6 = " + num6);
+        System.out.println("num7 = " + num7);
+        System.out.println("num8 = " + num8);
+        System.out.println("num9 = " + num9);
+
     }
 }
