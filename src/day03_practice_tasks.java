@@ -159,5 +159,23 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println("num8 = " + num8);
         System.out.println("num9 = " + num9);
 
+        //SwapTwoVariables2
+
+        int num10 = 10;
+        int num11 = 15;
+
+        num10 = num11 - 5;
+        num11 = num10 + 5;
+
+
+        System.out.println("num10 = " + num10);
+        System.out.println("num11 = " + num11);
+
+        System.out.println(5 + 2 * 4 - 3); //10
+        System.out.println(5 * 10 / (4 - 2)); //25
+        System.out.println((6 - 3) * (2 + 7) / 3);//9
+        System.out.println("8" + 12 * 2 + 4); //8244
+        System.out.println(4 + 17 % 2 + "Cydeo" + 1 + 5); //5Cydeo15
+
     }
 }
