@@ -1,3 +1,5 @@
+package day03_practice_tasks;
+
 public class day03_practice_tasks {//<--class package to create java program
 
     public static void main(String[] args) {//<--public static void/method, class, variable to create java program

@@ -1,3 +1,5 @@
+package day02_practice_tasks;
+
 public class day02_practice_tasks {
 
     public static void main(String[] args) {
