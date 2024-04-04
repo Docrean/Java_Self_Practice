@@ -120,6 +120,38 @@ Year Make Model, Miles, Color, Price.
 
         //Selection Statements
             //if statements
+
+        /*
+        If statement checks a condition (boolean-expression).
+        If the condition is true, the code block under if is executed.
+        If the condition is false, the code follows its sequential order.
+        If there are multiple single if statements, zero or any combination of them can be executed.
+
+        if(condition){
+             statements
+        }
+
+        For a single statement, curly braces can be omitted but not recommended.
+
+        if(condition) statement;
+
+         */
+
+        if (4 < 5) System.out.println(true); //true. if statement prints.
+
+        int age2 = 43;
+        if (age2 >= 21) System.out.println("Eligible"); //prints the true
+        else System.out.println("Not Eligible");
+
+        int i = 4;
+        if (5 > 2){
+            i = --i + 6; //first decrements value of i then adds 6
+            System.out.println(i);
+        }
+
+
+        System.out.println("----------------------------------------------------");
+
         /*
         Write a program to calculate weekly wage for a given working hours.
         A company’s normal weekly wage is $ 900. It is multiplied by 1.5 if an
@@ -144,38 +176,52 @@ Year Make Model, Miles, Color, Price.
 
         System.out.println("Weekly wage: " + weeklyWage1);
 
+        System.out.println("----------------------------------------------------");
 
-        int number1 = 40;
+
+        int number1 = 19;
         boolean isEnough = false;
-        if (number1 >= 20)
+
+        if (number1 >= 20){ //false. if statement prints only true. won't print
+            System.out.println("I have more than 20 watermelons");
+        }
+        if (isEnough){//declared isEnough is false. won't run.
+            System.out.println("Good Job");
+        }
+        if (!isEnough){//the reverse of isEnough declared is true. if statement prints true.
+            System.out.println("I need more watermelon");
+        }
+
+        System.out.println("----------------------------------------------------");
 
 
+        //If else (2 way double selection)
+        /*
+        If statement checks a condition (boolean-expression).
+        If the condition is true, code block under “if” is executed.
+        If the condition is false, code block under “else” is executed.
+        One of the two statements is executed.
+         */
 
+        /*
+        if(condition){
+            statement
+        } else{
+            statement
+        }
+         */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        int birthYear1 = 2015;
+        int birthYear2 = 2005;
+        if (birthYear1 < 2024){
+            System.out.println("True");;
+        } else{
+            System.out.println("False");
+        } if (birthYear2 > 2024){
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
     }
 
 }
