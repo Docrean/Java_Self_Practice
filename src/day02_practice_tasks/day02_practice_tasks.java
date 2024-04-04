@@ -15,10 +15,14 @@ public class day02_practice_tasks {
 
         System.out.println(b1 + ", " + b2 + ", " + b3);
 
+        System.out.println("--------------------------------------");
+
         String man;
         man = "Java";
 
         System.out.println("man = " + man);
+
+        System.out.println("--------------------------------------");
 
         byte c = 127;
 
@@ -26,28 +30,46 @@ public class day02_practice_tasks {
 
         int f = 2_147_483_647;
 
-        long g = 9_223_372_036_854_775_807l;
+        long g = 9_223_372_036_854_775_807L;
 
         System.out.println("c = " + c);
         System.out.println("d = " + d);
         System.out.println("f = " + f);
         System.out.println("g = " + g);
 
+        System.out.println("--------------------------------------");
+
         float maxValue = 3.402823E+38f;
 
-        double maxValue2 = 1.79769313486231570_308d;
+        double maxValue2 = 1.79769313486231570_308;
+        long maxvalue3 = (long) maxValue2; //cast long to double. will print 1 before the .  since long does not accept decimal
 
         System.out.println("maxValue = " + maxValue);
         System.out.println("maxValue2 = " + maxValue2);
+        System.out.println("maxvalue3 = " + maxvalue3);
 
+        System.out.println("--------------------------------------");
+
+        //casting
+
+        int year1 = 141343153;
+        byte year2 = (byte) year1; //cast byte into int value with new byte variable year2 and cast into year1 int range
+        short year3 = (short) year1; //cast short into int value with new byte variable year3 and cast into year1 int range
+        System.out.println("year = " + year1);
+
+        System.out.println("--------------------------------------");
 
         boolean isHappy = true;
-        isHappy = false; //next assigned boolean prints the result. java compiles up->down left->right
+        //isHappy = false; //re-assigned boolean prints false. java compiles up->down left->right
         boolean isSitting = true;
-        isSitting = false; //next assigned boolean prints the result
+        //isSitting = false; //re-assigned boolean prints false.
 
-        System.out.println("isHappy = " + isHappy);
-        System.out.println("isSitting = " + isSitting);
+
+        System.out.println("isHappy = " + !isHappy); //logical not reterses result
+        System.out.println("isSitting = " + !isSitting);
+
+        System.out.println("--------------------------------------");
+
 
         char ph1 = 'B', ph2 = 72, ph3 = 0x52, ph4 = '\u0066';
 
@@ -119,5 +141,18 @@ public class day02_practice_tasks {
                             THe underscore(_) character is most commonly used for constants and packages
                             Our custom class names should not be same with the library(built-in) classes
         */
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

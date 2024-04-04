@@ -130,18 +130,20 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println("Discount Amount: $" + discount);
         System.out.println("Sale Price: $" + salesPrice);
 
-        //SwapTwoVariables1
+        //SwapTwoVariables1 using third variable
 
         int num4 = 10;
         int num5 = 15;
         int temp;
 
-        temp = num5; //temp 5 is now num5 15
+        temp = num5; //temp is now num5 15
         num5 = num4; //num5 15 is now num4 10
         num4 = temp; //num4 10 is now temp 15
 
         System.out.println("num4 = " + num4);
         System.out.println("num5 = " + num5);
+
+        //Swap 4 variables using a 5th variable
 
         int num6 = 10;
         int num7 = 15;
@@ -161,7 +163,7 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println("num8 = " + num8);
         System.out.println("num9 = " + num9);
 
-        //SwapTwoVariables2
+        //SwapTwoVariables2 without using third variable
 
         int num10 = 10;
         int num11 = 15;
@@ -178,6 +180,8 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println((6 - 3) * (2 + 7) / 3);//9
         System.out.println("8" + 12 * 2 + 4); //8244
         System.out.println(4 + 17 % 2 + "Cydeo" + 1 + 5); //5Cydeo15
+
+
 
     }
 }
