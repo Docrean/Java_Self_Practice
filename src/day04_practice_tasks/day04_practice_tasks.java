@@ -217,7 +217,9 @@ Year Make Model, Miles, Color, Price.
             System.out.println("True");;
         } else{
             System.out.println("False");
-        } if (birthYear2 > 2024){
+        }
+
+        if (birthYear2 > 2024){
             System.out.println("True");
         } else {
             System.out.println("False");
