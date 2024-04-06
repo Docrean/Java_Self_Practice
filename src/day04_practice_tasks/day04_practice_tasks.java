@@ -119,6 +119,7 @@ Year Make Model, Miles, Color, Price.
         System.out.println("----------------------------------------------------");
 
         //Selection Statements
+
             //if statements
 
         /*
@@ -148,6 +149,58 @@ Year Make Model, Miles, Color, Price.
             i = --i + 6; //first decrements value of i then adds 6
             System.out.println(i);
         }
+
+        System.out.println("----------------------------------------------------");
+
+
+        int m = 8;
+
+
+        if (m < 10) System.out.println("i < 10");
+        if (m < 9) System.out.println("i < 9");
+        if (m < 8) System.out.println("i < 8");
+        if (m < 7) System.out.println("i < 7");
+        if (m < 6) System.out.println("i < 6");
+
+        /*
+        i < 10
+        i < 9
+         */
+
+        System.out.println("----------------------------------------------------");
+
+        int u = 3;
+
+        if (u < 10) System.out.println("i < 10");
+        if (u < 9) System.out.println("i < 9");
+        if (u < 8) System.out.println("i < 8");
+        if (u < 7) System.out.println("i < 7");
+        if (u < 6) System.out.println("i < 6");
+
+        /*
+        i < 10
+        i < 9
+        i < 8
+        i < 7
+        i < 6
+
+         */
+
+        System.out.println("----------------------------------------------------");
+
+        int s = 11;
+
+        if (s < 10) System.out.println("i < 10");
+        if (s < 9) System.out.println("i < 9");
+        if (s < 8) System.out.println("i < 8");
+        if (s < 7) System.out.println("i < 7");
+        if (s < 6) System.out.println("i < 6");
+
+
+        /*
+
+         */
+
 
 
         System.out.println("----------------------------------------------------");
@@ -224,6 +277,113 @@ Year Make Model, Miles, Color, Price.
         } else {
             System.out.println("False");
         }
+
+
+        System.out.println("----------------------------------------------------");
+
+        //Multi-branch "if" (if-else if-else)
+
+        /*
+        Multi-branch “if” (“if - else if - else”) allows us to perform different actions based on multiple conditions.
+
+        We can use “else if” condition more than once.
+
+        If there are multiple conditions, only one of them is executed.
+
+        */
+
+        int f = 5;
+        int g = 6;
+
+        if (f == g){
+            System.out.println("Mcgoo"); //false. won't run
+        } else if(g == f) {
+            System.out.println("Mcgee"); //false. won't run
+        } else{ //(no condition)
+            System.out.println("Invalid"); //else runs if conditions are false
+        }
+
+        /*
+        Write a program that checks the value of the variable num.
+        If num is greater than 0, the program prints "Number is positive".
+        If num is less than 0, the program prints "Number is negative".
+        If num is neither greater than nor less than 0 (i.e., it is 0), the
+        program prints "Number is zero".
+         */
+
+        int num = 0;
+
+        if (num > 0){
+            System.out.println("Number is positive");
+        } else if (num > 0){
+            System.out.println("Number is zero");
+        } else{
+            System.out.println("Number is zero");
+        }
+
+        int num1 = 3;
+
+        if (num1 > 0){
+            System.out.println("Number is positive");
+        } else if (num1 < 0){
+            System.out.println("Number is zero");
+        } else {
+            System.out.println("Number is zero");
+        }
+
+
+        /*
+
+        Single-if
+            If there are multiple single if statements, zero or any combination of them can be executed.
+
+        if(condition){
+            statements
+        }
+
+
+
+        if-else:
+            One of the two statements is executed.
+
+        if(condition){
+            statement
+        } else{
+            statement
+        }
+
+
+
+        Multi-branch if:
+        "if-else if-else"
+            If there are multiple conditions, only one of them is executed.
+
+        if(condition){
+            statement
+        } else if (condition){
+            statement
+        } else{   <-----------------NO CONDITION IN THE ELSE BLOCK
+            statement
+        }
+
+
+         */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
 }
