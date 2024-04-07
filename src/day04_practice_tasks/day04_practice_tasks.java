@@ -7,7 +7,7 @@ public class day04_practice_tasks {
 
     public static void main(String[] args) {
 
-            //ConcatIntro
+        //ConcatIntro
 
         String name = "Brandon"; //---------------------------------
         // |
@@ -16,7 +16,7 @@ public class day04_practice_tasks {
         int salary = 85_000;                                     // |
         //|     // |                                             // |
         //|     // |                                             // \/
-        System.out.println("Hello " + name + "," ); //declare first dataType (String name)
+        System.out.println("Hello " + name + ","); //declare first dataType (String name)
         //|     // |        //order-->
         //|     // |        //string-->variable-->string-->variable-->string
         //|     // |        //variables are passed OUTSIDE the " "
@@ -36,7 +36,7 @@ public class day04_practice_tasks {
 
         System.out.println("---------------------------------------------------------------- ");
 
-            //Birthday
+        //Birthday
 
         /*
         Create a class called BirthDay and create the following variables:
@@ -56,12 +56,12 @@ public class day04_practice_tasks {
         int birthDay = 9, birthMonth = 5,
                 birthYear = 1988;
 
-        System.out.println( name1 + " was born on " + birthMonth + "/"
+        System.out.println(name1 + " was born on " + birthMonth + "/"
                 + birthDay + "/" + birthYear);
 
         System.out.println("--------------------------------------------------------");
 
-            //CarInfo
+        //CarInfo
 
         /*
 Car information is :
@@ -90,7 +90,7 @@ Year Make Model, Miles, Color, Price.
                 Price = 19000;
 
         System.out.println(year + " " + make + " " + model
-                + ", " + miles + " miles, " + color + ", $" + Price+ ".");
+                + ", " + miles + " miles, " + color + ", $" + Price + ".");
 
         System.out.println("----------------------------------------------------------------");
 
@@ -121,7 +121,7 @@ Year Make Model, Miles, Color, Price.
 
         //Selection Statements
 
-            //if statements
+        //if statements
 
         /*
         If statement checks a condition (boolean-expression).
@@ -146,7 +146,7 @@ Year Make Model, Miles, Color, Price.
         else System.out.println("Not Eligible");
 
         int i = 4;
-        if (5 > 2){
+        if (5 > 2) {
             i = --i + 6; //first decrements value of i then adds 6
             System.out.println(i);
         }
@@ -203,7 +203,6 @@ Year Make Model, Miles, Color, Price.
          */
 
 
-
         System.out.println("----------------------------------------------------");
 
         /*
@@ -215,7 +214,7 @@ Year Make Model, Miles, Color, Price.
         int workingHours = 60;
         int weeklyWage = 900;
 
-        if (workingHours > 40){
+        if (workingHours > 40) {
             System.out.println(weeklyWage * 1.5);
         }
 
@@ -236,13 +235,13 @@ Year Make Model, Miles, Color, Price.
         int number1 = 19;
         boolean isEnough = false;
 
-        if (number1 >= 20){ //false. if statement prints only true. won't print
+        if (number1 >= 20) { //false. if statement prints only true. won't print
             System.out.println("I have more than 20 watermelons");
         }
-        if (isEnough){ //declared isEnough is false. won't run.
+        if (isEnough) { //declared isEnough is false. won't run.
             System.out.println("Good Job");
         }
-        if (!isEnough){ //the reverse of isEnough declared is true. if statement prints true.
+        if (!isEnough) { //the reverse of isEnough declared is true. if statement prints true.
             System.out.println("I need more watermelon");
         }
 
@@ -267,13 +266,14 @@ Year Make Model, Miles, Color, Price.
 
         int birthYear1 = 2015;
         int birthYear2 = 2005;
-        if (birthYear1 < 2024){
-            System.out.println("True");;
-        } else{
+        if (birthYear1 < 2024) {
+            System.out.println("True");
+            ;
+        } else {
             System.out.println("False");
         }
 
-        if (birthYear2 > 2024){
+        if (birthYear2 > 2024) {
             System.out.println("True");
         } else {
             System.out.println("False");
@@ -283,7 +283,7 @@ Year Make Model, Miles, Color, Price.
 
         int g = 8;
 
-        if(g < 10) System.out.println("g < 10");
+        if (g < 10) System.out.println("g < 10");
         else if (g < 9) System.out.println("g < 9");
         else if (g < 8) System.out.println("g < 8");
         else if (g < 7) System.out.println("g < 7");
@@ -293,7 +293,7 @@ Year Make Model, Miles, Color, Price.
 
         int l = 3;
 
-        if(l < 10) System.out.println("l < 10");
+        if (l < 10) System.out.println("l < 10");
         else if (l < 9) System.out.println("l < 9");
         else if (l < 8) System.out.println("l < 8");
         else if (l < 7) System.out.println("l < 7");
@@ -303,7 +303,7 @@ Year Make Model, Miles, Color, Price.
 
         int n = 11;
 
-        if(n < 10) System.out.println("n < 10");
+        if (n < 10) System.out.println("n < 10");
         else if (n < 9) System.out.println("n < 9");
         else if (n < 8) System.out.println("n < 8");
         else if (n < 7) System.out.println("n < 7");
@@ -327,11 +327,11 @@ Year Make Model, Miles, Color, Price.
         int f = 5;
         int a = 6;
 
-        if (f == a){
+        if (f == a) {
             System.out.println("Mcgoo"); //false. won't run
-        } else if(a == f) {
+        } else if (a == f) {
             System.out.println("Mcgee"); //false. won't run
-        } else{ //(no condition)
+        } else { //(no condition)
             System.out.println("Invalid"); //else runs if conditions are false
         }
 
@@ -345,19 +345,19 @@ Year Make Model, Miles, Color, Price.
 
         int num = 0;
 
-        if (num > 0){
+        if (num > 0) {
             System.out.println("Number is positive");
-        } else if (num > 0){
+        } else if (num > 0) {
             System.out.println("Number is zero");
-        } else{
+        } else {
             System.out.println("Number is zero");
         }
 
         int num1 = 3;
 
-        if (num1 > 0){
+        if (num1 > 0) {
             System.out.println("Number is positive");
-        } else if (num1 < 0){
+        } else if (num1 < 0) {
             System.out.println("Number is zero");
         } else {
             System.out.println("Number is zero");
@@ -440,12 +440,12 @@ Year Make Model, Miles, Color, Price.
          */
 
 
-         //Greatest Number
+        //Greatest Number
 
         int num2 = 4, num3 = 8;
 
 
-        if (num2 > num3){
+        if (num2 > num3) {
             System.out.println("The greatest number is " + num2);
         } else if (num3 > num2) {
             System.out.println("The greatest number is " + num3);
@@ -464,7 +464,7 @@ Year Make Model, Miles, Color, Price.
 
         int hour = 14;
 
-        if (hour > 6 && hour <= 12){
+        if (hour > 6 && hour <= 12) {
             System.out.println("Good Morning");
         } else if (hour > 12 && hour < 15) {
             System.out.println("Good Afternoon");
@@ -501,7 +501,7 @@ Year Make Model, Miles, Color, Price.
         double average = (math + chemistry + biology) / 3;
 
 
-        if (average >= 90 && average <= 100){
+        if (average >= 90 && average <= 100) {
             System.out.println("Average is " + average);
             System.out.println("Grade is A");
         } else if (average >= 80 && average <= 89) {
@@ -534,7 +534,7 @@ Year Make Model, Miles, Color, Price.
         double discount = price * quantity * .10;
         double netRevenue = revenue - discount;
 
-        if (revenue > 5000){
+        if (revenue > 5000) {
             System.out.println("Discount: $" + discount);
             System.out.println("Net Revenue: $" + netRevenue);
         } else {
@@ -551,7 +551,7 @@ Year Make Model, Miles, Color, Price.
         double netRevenue1 = revenue1 - discount1;
 
 
-        if (revenue1 > 5000){
+        if (revenue1 > 5000) {
             System.out.println("Discount: $" + discount1);
             System.out.println("Net Revenue: $" + netRevenue1);
         } else {
@@ -577,8 +577,8 @@ Year Make Model, Miles, Color, Price.
 
         int salary1 = 40000;
         int yearsOnJob = 2;
-        if (salary1 >= 30000){
-            if (yearsOnJob >= 2){
+        if (salary1 >= 30000) {
+            if (yearsOnJob >= 2) {
                 System.out.println("You are qualified for the loan.");
             } else {
                 System.out.println("You are not qualified for loan yet.");
@@ -604,19 +604,19 @@ Year Make Model, Miles, Color, Price.
 
         int score = 75;
 
-            if (score >= 0 && score < 60) {
-                } System.out.println("Fail");
-                if (score >= 60 && score < 90) {
-                    System.out.println("Pass");
-                } else if (score >= 90 && score <= 100) {
-                    System.out.println("Pass with Distinction");
-                } else {
-                    System.out.println("Invalid Score");
-                }
+        if (score > 0 && score < 100) {
+            if (score >= 90) {
+                System.out.println("Pass with distinction");
+            } else if (score >= 60) {
+                System.out.println("Pass");
+            } else {
+                System.out.println("Fail");
+            }
+        } else {
+            System.out.println("Invalid");
+        }
 
-
-
-                    System.out.println("----------------------------------------------------");
+        System.out.println("----------------------------------------------------");
 
         /*
         Ex 2
@@ -626,17 +626,19 @@ Year Make Model, Miles, Color, Price.
 
          */
 
-                    int score2 = 90;
+        int score2 = 90;
 
-                    if (score2 >= 0 && score2 <= 60) {
-                        System.out.println("Pass");
-                        } if (score2 >= 60 && score2 < 90) {
-                            System.out.println("Pass");
-                        } else if (score2 >= 90 && score2 <= 100) {
-                            System.out.println("Pass with Distinction");
-                        } else {
-                            System.out.println("Invalid Score");
-                        }
+        if (score2 > 0 && score2 < 100){
+            if (score2 >= 90){
+                System.out.println("Pass with Distinction");
+            } else if (score <= 60) {
+                System.out.println("Pass");
+            } else{
+                System.out.println("Fail");
+            }
+        } else{
+            System.out.println("Invalid");
+        }
 
 
 
@@ -665,17 +667,21 @@ Year Make Model, Miles, Color, Price.
         Output:
         Good Afternoon
          */
-                    int hour2 = 14;
+        int hour2 = 14;
 
-                  if (hour2 < 0 && hour2 > 24) {
-                      System.out.println("This is not a valid hour");
-                      } if (hour2 > 6 && hour2 < 12) {
-                          System.out.println("Good Morning");
-                      } else if (hour2 > 12 && hour2 < 15) {
-                          System.out.println("Good Afternoon");
-                      } else if (hour2 > 15 && hour2 < 22) {
-                          System.out.println("Good Evening");
-                      }
+        if (hour2 >= 0 && hour2 <= 24) {
+            if (hour2 < 12){
+                System.out.println("Good Morning");
+            } else if (hour2 < 15) {
+                System.out.println("Good Afternoon");
+            } else {
+                System.out.println("Good Evening");
+            }
+        } else{
+            System.out.println("This is not a valid hour");
+        }
+
+
 
 
         System.out.println("----------------------------------------------------");
@@ -705,30 +711,28 @@ Year Make Model, Miles, Color, Price.
         double math1 = 50, chemistry1 = 60, biology1 = 70;
         double average1 = (math1 + chemistry1 + biology1) / 3;
 
-        if (average1 <= 0 && average1 >= 100) {
-            System.out.println("Grade is Invalid");
-            }if (average1 >= 90 && average1 <= 100) {
+        if (average1 > 0 && average1 < 100) {
+            if (average1 >= 90) {
                 System.out.println("Average is " + average1);
-                System.out.println("Grade is D");
-            } else if (average1 >= 80 && average1 <= 89) {
+                System.out.println("Grade is A");
+            } else if (average1 >=80) {
                 System.out.println("Average is " + average1);
                 System.out.println("Grade is B");
-            } else if (average1 >= 70 && average1 <= 79) {
+            } else if (average1 >= 70) {
                 System.out.println("Average is " + average1);
                 System.out.println("Grade is C");
-            } else if (average1 >= 70 && average1 <= 79) {
-                System.out.println("Average is " + average1);
-                System.out.println("Grade is C");
-            } else if (average1 >= 60 && average1 <= 69) {
+            } else if (average1 >= 60) {
                 System.out.println("Average is " + average1);
                 System.out.println("Grade is D");
-            } else  {
+            } else {
                 System.out.println("Grade is F");
             }
-
-
+        } else {
+            System.out.println("Grade is Invalid");
+        }
 
 
     }
 
 }
+
