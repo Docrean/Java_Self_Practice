@@ -207,7 +207,7 @@ Year Make Model, Miles, Color, Price.
 
         /*
         Write a program to calculate weekly wage for a given working hours.
-        A company’s normal weekly wage is $ 900. It is multiplied by 1.5 if an
+        A company’s normal weekly wage is $900. It is multiplied by 1.5 if an
         employee’s working hours is greater than 40.
          */
 
@@ -238,10 +238,10 @@ Year Make Model, Miles, Color, Price.
         if (number1 >= 20){ //false. if statement prints only true. won't print
             System.out.println("I have more than 20 watermelons");
         }
-        if (isEnough){//declared isEnough is false. won't run.
+        if (isEnough){ //declared isEnough is false. won't run.
             System.out.println("Good Job");
         }
-        if (!isEnough){//the reverse of isEnough declared is true. if statement prints true.
+        if (!isEnough){ //the reverse of isEnough declared is true. if statement prints true.
             System.out.println("I need more watermelon");
         }
 
@@ -278,8 +278,39 @@ Year Make Model, Miles, Color, Price.
             System.out.println("False");
         }
 
+        System.out.println("----------------------------------------------------");
+
+        int g = 8;
+
+        if(g < 10) System.out.println("g < 10");
+        else if (g < 9) System.out.println("g < 9");
+        else if (g < 8) System.out.println("g < 8");
+        else if (g < 7) System.out.println("g < 7");
+        else if (g < 6) System.out.println("g < 6");
 
         System.out.println("----------------------------------------------------");
+
+        int l = 3;
+
+        if(l < 10) System.out.println("l < 10");
+        else if (l < 9) System.out.println("l < 9");
+        else if (l < 8) System.out.println("l < 8");
+        else if (l < 7) System.out.println("l < 7");
+        else if (l < 6) System.out.println("l < 6");
+
+        System.out.println("----------------------------------------------------");
+
+        int n = 11;
+
+        if(n < 10) System.out.println("n < 10");
+        else if (n < 9) System.out.println("n < 9");
+        else if (n < 8) System.out.println("n < 8");
+        else if (n < 7) System.out.println("n < 7");
+        else if (n < 6) System.out.println("n < 6");
+
+
+        System.out.println("----------------------------------------------------");
+
 
         //Multi-branch "if" (if-else if-else)
 
@@ -293,11 +324,11 @@ Year Make Model, Miles, Color, Price.
         */
 
         int f = 5;
-        int g = 6;
+        int a = 6;
 
-        if (f == g){
+        if (f == a){
             System.out.println("Mcgoo"); //false. won't run
-        } else if(g == f) {
+        } else if(a == f) {
             System.out.println("Mcgee"); //false. won't run
         } else{ //(no condition)
             System.out.println("Invalid"); //else runs if conditions are false
@@ -330,6 +361,44 @@ Year Make Model, Miles, Color, Price.
         } else {
             System.out.println("Number is zero");
         }
+
+
+        System.out.println("----------------------------------------------------");
+
+        int e = 8;
+
+        if (e < 10) System.out.println("e < 10");
+        else if (e < 9) System.out.println("e < 9");
+        else if (e < 8) System.out.println("e < 8");
+        else if (e < 7) System.out.println("e < 7");
+        else if (e < 6) System.out.println("e < 6");
+        else System.out.println("none");
+
+        System.out.println("----------------------------------------------------");
+
+        int w = 3;
+
+        if (w < 10) System.out.println("w < 10");
+        else if (w < 9) System.out.println("w < 9");
+        else if (w < 8) System.out.println("w < 8");
+        else if (w < 7) System.out.println("w < 7");
+        else if (w < 6) System.out.println("w < 6");
+        else System.out.println("none");
+
+
+        System.out.println("----------------------------------------------------");
+
+        int z = 11;
+
+        if (z < 10) System.out.println("z < 10");
+        else if (z < 9) System.out.println("z < 9");
+        else if (z < 8) System.out.println("z < 8");
+        else if (z < 7) System.out.println("z < 7");
+        else if (z < 6) System.out.println("z < 6");
+        else System.out.println("none");
+
+
+        System.out.println("----------------------------------------------------");
 
 
         /*
@@ -370,18 +439,123 @@ Year Make Model, Miles, Color, Price.
          */
 
 
+         //Greatest Number
+
+        int num2 = 4, num3 = 8;
 
 
+        if (num2 > num3){
+            System.out.println("The greatest number is " + num2);
+        } else if (num3 > num2) {
+            System.out.println("The greatest number is " + num3);
+        }
+
+        System.out.println("----------------------------------------------------");
+
+        //Greeting Hours
+        /*
+        Write a program that prints greeting words for a given hour with 24-hour clock system.
+        If an hour is after 6 but before 12 noon, greet with Good Morning
+        If an hour is after 12 noon but before 15, greet with Good Afternoon
+        If an hour is after 15 but before 22, greet with Good Evening
+        If an hour is not between 0 and 23 (inclusive), print This is not a valid hour
+         */
+
+        int hour = 14;
+
+        if (hour > 6 && hour <= 12){
+            System.out.println("Good Morning");
+        } else if (hour > 12 && hour < 15) {
+            System.out.println("Good Afternoon");
+        } else if (hour > 15 && hour < 22) {
+            System.out.println("Gooe Evening");
+        } else if (hour < 0 && hour >= 23) {
+            System.out.println("This is not a valid hour");
+        }
+
+        System.out.println("----------------------------------------------------");
+
+        /*
+        Write a program that calculates the average of Math, Chemistry, and Biology scores and prints the grade table.
+        Assume that each given score is valid (between 0 and 100).
+
+        Input:
+        Math = 50
+        Chemistry = 60
+        Biology = 70
+
+        Output:
+        Average is 60.0
+        Grade is D
+
+        Average of Scores
+        90-100   A
+        80-89    B
+        70-79    C
+        60-69    D
+        0-59     F
+             */
+
+        double math = 50, chemistry = 60, biology = 70;
+        double average = (math + chemistry + biology) / 3;
 
 
+        if (average >= 90 && average <= 100){
+            System.out.println("Average is " + average);
+            System.out.println("Grade is A");
+        } else if (average >= 80 && average <= 89) {
+            System.out.println("Average is " + average);
+            System.out.println("Grade is B");
+        } else if (average >= 70 && average <= 79) {
+            System.out.println("Average is " + average);
+            System.out.println("Grade is C");
+        } else if (average >= 60 && average <= 69) {
+            System.out.println("Average is " + average);
+            System.out.println("Grade is D");
+        } else {
+            System.out.println("Grade is F");
+        }
+
+        System.out.println("----------------------------------------------------");
+
+        //Revenue
+        /*
+        Write a program that calculates the revenue for a given product price and quantity.
+        The program should apply a 10% discount if the revenue is more than 5000 and displays the discount and net
+        revenue:
+        revenue = price × quantity.
+         */
+
+        double price = 119.99;
+        int quantity = 10;
+
+        double revenue = price * quantity;
+        double discount = price * quantity * .10;
+        double netRevenue = revenue - discount;
+
+        if (revenue > 5000){
+            System.out.println("Discount: $" + discount);
+            System.out.println("Net Revenue: $" + netRevenue);
+        } else {
+            System.out.println("Revenue: $" + revenue);
+        }
+
+        System.out.println("----------------------------------------------------");
+
+        double price1 = 1500;
+        int quantity1 = 4;
+
+        double revenue1 = price1 * quantity1;
+        double discount1 = price1 * quantity1 * .10;
+        double netRevenue1 = revenue1 - discount1;
 
 
-
-
-
-
-
-
+        if (revenue1 > 5000){
+            System.out.println("Discount: $" + discount1);
+            System.out.println("Net Revenue: $" + netRevenue1);
+        } else {
+            System.out.println("Revenue: $" + revenue1);
+        }
 
 
     }
