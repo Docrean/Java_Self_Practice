@@ -1,5 +1,6 @@
 package day04_practice_tasks;
 
+import javax.swing.*;
 import java.sql.SQLOutput;
 
 public class day04_practice_tasks {
@@ -556,6 +557,176 @@ Year Make Model, Miles, Color, Price.
         } else {
             System.out.println("Revenue: $" + revenue1);
         }
+
+        System.out.println("----------------------------------------------------");
+
+        /*
+        Nested If
+        An if statement in another one is called a nested if statement.
+        Outer and inner if statements can have infinite inner if statements.
+
+        if(condition){
+            if(condition){
+                statement
+            } else if (condition){
+                statement
+            } else {
+                statement
+            }
+         */
+
+        int salary1 = 40000;
+        int yearsOnJob = 2;
+        if (salary1 >= 30000){
+            if (yearsOnJob >= 2){
+                System.out.println("You are qualified for the loan.");
+            } else {
+                System.out.println("You are not qualified for loan yet.");
+            }
+        } else {
+            System.out.println("You must earn at least $30,000 per year.");
+        }
+
+        System.out.println("----------------------------------------------------");
+
+        /*
+        Write a program using nested if evaluates the given score.
+        If a score is less than 60, then print “Fail”
+        If a score is greater or equal to 60, but less than 90, then print “Pass”
+        If a score is greater or equal to 90, then print “Passed with Distinction”
+        If a score is not between 0 and 100, then print “Invalid score”
+
+        Ex 1
+        Input: 75
+        Output:
+        Pass
+         */
+
+        int score = 75;
+
+            if (score >= 0 && score < 60) {
+                } System.out.println("Fail");
+                if (score >= 60 && score < 90) {
+                    System.out.println("Pass");
+                } else if (score >= 90 && score <= 100) {
+                    System.out.println("Pass with Distinction");
+                } else {
+                    System.out.println("Invalid Score");
+                }
+
+
+
+                    System.out.println("----------------------------------------------------");
+
+        /*
+        Ex 2
+        Input: 90
+        Output:
+        Passed with distinction
+
+         */
+
+                    int score2 = 90;
+
+                    if (score2 >= 0 && score2 <= 60) {
+                        System.out.println("Pass");
+                        } if (score2 >= 60 && score2 < 90) {
+                            System.out.println("Pass");
+                        } else if (score2 >= 90 && score2 <= 100) {
+                            System.out.println("Pass with Distinction");
+                        } else {
+                            System.out.println("Invalid Score");
+                        }
+
+
+
+
+        /*
+        if statements make decisions based on a boolean expression.
+        Based on the true or false evaluation of the expression, these statements take one of the two possible courses.
+        Multi-branch “if” (“if - else if - else”) allows us to perform different actions based on multiple conditions.
+        Use nested if statements with caution. It might decrease readability.
+        Cover all possible conditions in conditional statements.
+        Debugging is essential to ensure that a program runs as intended
+         */
+
+        System.out.println("----------------------------------------------------");
+
+
+        /*
+        Write a program using nested if which prints greeting words for a given hour with a 24-hour clock system.
+        If an hour is after 6 but before 12 noon, greet with Good Morning
+        If an hour is after 12 noon but before 15, greet with Good Afternoon
+        If an hour is after 15 but before 22, greet with Good Evening
+        If an hour is not between 0 and 23 (inclusive), print This is not a valid hour
+
+        Ex:
+        Input: Hour 14
+        Output:
+        Good Afternoon
+         */
+                    int hour2 = 14;
+
+                  if (hour2 < 0 && hour2 > 24) {
+                      System.out.println("This is not a valid hour");
+                      } if (hour2 > 6 && hour2 < 12) {
+                          System.out.println("Good Morning");
+                      } else if (hour2 > 12 && hour2 < 15) {
+                          System.out.println("Good Afternoon");
+                      } else if (hour2 > 15 && hour2 < 22) {
+                          System.out.println("Good Evening");
+                      }
+
+
+        System.out.println("----------------------------------------------------");
+
+
+        /*
+        Write a program using nested if that calculates the average of Math, Chemistry, and Biology scores and prints the grade table.
+        If any of the given marks is not between 0 and 100, then only print “Marks are not valid”
+
+        Input:
+        Math = 50
+        Chemistry = 60
+        Biology = 70
+
+        Output:
+        Average is 60.0
+        Grade is D
+
+        Average of Scores
+        90-100   A
+        80-89    B
+        70-79    C
+        60-69    D
+        0-59     F
+             */
+
+        double math1 = 50, chemistry1 = 60, biology1 = 70;
+        double average1 = (math1 + chemistry1 + biology1) / 3;
+
+        if (average1 <= 0 && average1 >= 100) {
+            System.out.println("Grade is Invalid");
+            }if (average1 >= 90 && average1 <= 100) {
+                System.out.println("Average is " + average1);
+                System.out.println("Grade is D");
+            } else if (average1 >= 80 && average1 <= 89) {
+                System.out.println("Average is " + average1);
+                System.out.println("Grade is B");
+            } else if (average1 >= 70 && average1 <= 79) {
+                System.out.println("Average is " + average1);
+                System.out.println("Grade is C");
+            } else if (average1 >= 70 && average1 <= 79) {
+                System.out.println("Average is " + average1);
+                System.out.println("Grade is C");
+            } else if (average1 >= 60 && average1 <= 69) {
+                System.out.println("Average is " + average1);
+                System.out.println("Grade is D");
+            } else  {
+                System.out.println("Grade is F");
+            }
+
+
 
 
     }
