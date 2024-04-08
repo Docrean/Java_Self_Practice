@@ -681,9 +681,6 @@ Year Make Model, Miles, Color, Price.
             System.out.println("This is not a valid hour");
         }
 
-
-
-
         System.out.println("----------------------------------------------------");
 
 
@@ -711,7 +708,7 @@ Year Make Model, Miles, Color, Price.
         double math1 = 50, chemistry1 = 60, biology1 = 70;
         double average1 = (math1 + chemistry1 + biology1) / 3;
 
-        if (average1 > 0 && average1 < 100) {
+        if (average1 > 0 && average1 < 100) { //define expression to see if valid to proceed
             if (average1 >= 90) {
                 System.out.println("Average is " + average1);
                 System.out.println("Grade is A");
@@ -730,6 +727,79 @@ Year Make Model, Miles, Color, Price.
         } else {
             System.out.println("Grade is Invalid");
         }
+
+        System.out.println("----------------------------------------------------");
+
+        /*
+        Switch statement executes statements based on the value of a variable or an expression.
+        It executes one statement from multiple conditions.
+
+        switch (expression){
+        case constant1 :
+            statement 1;
+            statement 2
+            ...
+            break;
+        case constant2 :
+            statement 1;
+            statement 2;
+            ...
+            break;
+        default :
+            statement 1;
+            statement 2;
+            ...
+            break;
+        }
+
+            Like an if-else-if ladder statement
+
+            The switch statement works with byte, short, int, char, String, and enum types
+            Case value can be literal or constant, but not variables
+            Case value must be unique, with no duplicates
+            NO curly braces for case blocks, even in case of more than one statement
+            Case block statements (including break) are optional
+            Cam group multiple constants by a comma.
+
+            If vs. Switch
+
+            If-else statements                                               switch statements
+            multiple expressions for multiple choices                   Single expression for multiple choices
+            Checks for boolean expression(equality and inequality)      Checks only equality (fixed data value)
+            Slower                                                      Significantly faster if many statements
+            Code may be complex and head to read/edit                   Code more concise, readable, easy to edit
+         */
+
+
+        //Calculator
+
+
+        int num10 = 100, num11 = 200; //define variable conditions
+
+        int calculateOperator = '*'; //create variable to store case to run
+
+        switch (calculateOperator){
+            case '-':
+                System.out.println("Subtraction = " + (num10 - num11));
+                break;
+            case '+':
+                System.out.println("Addition = " + (num10 + num11));
+                break;
+            case '/':
+                System.out.println("Division = " + (num10 / num11));
+                break;
+            case '*':
+                System.out.println("Multiplication = " + (num10 * num11));
+                break;
+            default:
+                System.out.println("Invalid Operator");
+                break;
+        }
+
+        //Traffic Light Selector
+
+
+
 
 
     }
