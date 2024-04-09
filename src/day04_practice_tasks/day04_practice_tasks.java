@@ -1,7 +1,5 @@
 package day04_practice_tasks;
 
-import javax.swing.*;
-import java.sql.SQLOutput;
 
 public class day04_practice_tasks {
 
@@ -735,17 +733,17 @@ Year Make Model, Miles, Color, Price.
         It executes one statement from multiple conditions.
 
         switch (expression){
-        case constant1 :
+        case constant1:
             statement 1;
             statement 2
             ...
             break;
-        case constant2 :
+        case constant2:
             statement 1;
             statement 2;
             ...
             break;
-        default :
+        default:
             statement 1;
             statement 2;
             ...
@@ -759,7 +757,7 @@ Year Make Model, Miles, Color, Price.
             Case value must be unique, with no duplicates
             NO curly braces for case blocks, even in case of more than one statement
             Case block statements (including break) are optional
-            Cam group multiple constants by a comma.
+            Can group multiple constants by a comma.
 
             If vs. Switch
 
@@ -796,10 +794,117 @@ Year Make Model, Miles, Color, Price.
                 break;
         }
 
+        System.out.println("----------------------------------------------------------");
+
         //Traffic Light Selector
 
+        /*
+           Write a program using switch statement to display traffic light colors using following logic:
+
+           'R' or 'r' -> "Red"
+           'Y' or 'y' -> "Yellow"
+           'G' or 'g' -> "Green"
+         */
+
+            String light1 = "Red", light2 = "Yellow", light3 = "Green";
+
+            char TrafficLight = 'R';
+
+            switch (TrafficLight){
+                case 'Y':
+                    System.out.println("Light is " + light2);
+                    break;
+                case 'G':
+                    System.out.println("Light is " + light3);
+                    break;
+                case 'R':
+                    System.out.println("Light is " + light1);
+                    break;
+                default:
+                    System.out.println("Invalid Light");
+                    break;
+            }
 
 
+        System.out.println("----------------------------------------------------------");
+
+
+            /* Laptop Models
+
+            Write a program using switch statement that displays different messages for given laptop models like
+            "apple", "dell", or "acer" laptop models.
+
+            If it is "apple", display "Apple-no virus"
+            If it is "dell", display "Tough one"
+            If it is "acer", display "Not recommended"
+            Else show "Do not buy that one!"
+             */
+
+
+            String laptop1 = "apple", laptop2 = "dell", laptop3 = "acer";
+
+            switch (laptop1){
+                case "apple" :
+                    System.out.println("Apple-no virus");
+                    break;
+                case "dell" :
+                    System.out.println("Tough one");
+                    break;
+                case "acer" :
+                    System.out.println("Not recommended");
+                    break;
+                default:
+                    System.out.println("Do not buy that one!");
+                    break;
+            }
+
+        System.out.println("----------------------------------------------------------");
+
+
+            /* Day Selector
+            Write a program using switch statement to display days based on given number:
+                1-> Monday
+                2-> Tuesday
+                3-> Wednesday
+                4-> Thursday
+                5-> Friday
+                6-> Saturday
+                7-> Sunday
+                If the given number not between 1 and 7 (inclusive), display “No such a day”
+             */
+
+                String day1 = "1->", day2 = "2->", day3 = "3->", day4 = "4->", day5 = "5->",
+                        day6 = "6->", day7 = "7->";
+
+            int dayOfWeek = '8';
+
+            switch (dayOfWeek){
+                default :
+                    if (dayOfWeek > 7) System.out.println("No such day");
+                    break;
+                case '1':
+                    System.out.println(day1 + " Monday");
+                    break;
+                case '2':
+                    System.out.println(day2 + " Tuesday");
+                    break;
+                case '3':
+                    System.out.println(day3 + " Wednesday");
+                    break;
+                case '4':
+                    System.out.println(day4 + " Thursday");
+                    break;
+                case '5':
+                    System.out.println(day5 + " Friday");
+                    break;
+                case '6':
+                    System.out.println(day6 + " Saturday");
+                    break;
+                case '7':
+                    System.out.println(day7 + " Sunday");
+                    break;
+
+            }
 
 
     }
