@@ -907,6 +907,41 @@ Year Make Model, Miles, Color, Price.
             }
 
 
+        System.out.println("----------------------------------------------------------");
+
+
+            /*
+            Ternary Operator
+
+            Ternary operator is a specific version of the :if-else statement"
+            Provides a way to conditionally assign a value based on boolean expression
+            Short...concise code.
+            Not recommended for complex statements
+
+               Variable = (condition) ? value1 : value2 ;
+
+               Where:
+               value1 is return of if block
+               value2 is return of else block
+               ? if keyword
+               : else keyword
+
+               Total number of “?” and “:” must be equal
+
+             */
+
+        int num9 = 4;
+
+        String result = (num9 < 0) ? "Number is negative" : "Number is positive or zero";
+
+        System.out.println(result);
+
+        System.out.println("----------------------------------------------------------");
+
+
+
+
+
     }
 
 }
