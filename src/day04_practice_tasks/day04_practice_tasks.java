@@ -918,7 +918,7 @@ Year Make Model, Miles, Color, Price.
             Short...concise code.
             Not recommended for complex statements
 
-               Variable = (condition) ? value1 : value2 ;
+               Variable = (condition) ? value1: value2;
 
                Where:
                value1 is return of if block
@@ -930,6 +930,8 @@ Year Make Model, Miles, Color, Price.
 
              */
 
+        //Ternary Result
+
         int num9 = 4;
 
         String result = (num9 < 0) ? "Number is negative" : "Number is positive or zero";
@@ -938,9 +940,45 @@ Year Make Model, Miles, Color, Price.
 
         System.out.println("----------------------------------------------------------");
 
+        //Ternary Vote1
+
+        int num13 = 2024-2005;
+
+        String result1 = (num13 >= 18) ? "You are eligible to vote" : "You are not eligible to vote";
+
+        System.out.println(result1);
+
+        System.out.println("----------------------------------------------------------");
+
+        //Ternary Vote2
+
+        int num14 = 2024-2015;
+
+        String result3 = (num14 >= 18) ? "You are eligible to vote" : "You are not eligible to vote";
+
+        System.out.println(result3);
+
+        System.out.println("----------------------------------------------------------");
+
+        //Ternary Number
+
+        int num15 = 3;
+
+        String result4 = (num15 > 0) ? "Number is positive" : (num15 < 0) ? "Number is negative" :
+               "Number is zero";
+
+        System.out.println(result4);
 
 
+        /*
+        The switch-expression must be a value of byte, short, int, char, or String type and must always be enclosed in parentheses.
 
+        The case values must have the same data type as the value of the switch-expression.
+
+        After the first match, the statements are executed until either a break statement or the end.
+
+        Ternary operators are not recommended for complex statements.
+         */
 
     }
 
