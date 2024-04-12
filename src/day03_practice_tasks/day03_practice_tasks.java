@@ -45,6 +45,8 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println(mod);
         System.out.println(mod2);
 
+        System.out.println("---------------------------------------------");
+
         int add = 10 + 5, minus = 10 - 5, divide = 10 / 5, multiply = 10 * 5;
 
         int mod3 = 10 % 3, mod4 = 9 % 2, mod5 = 14 % 2, mod6 = 1234 % 10;
@@ -60,11 +62,15 @@ public class day03_practice_tasks {//<--class package to create java program
 
         System.out.println("078" + " " + "05" + " " + "1120");
 
+        System.out.println("---------------------------------------------");
+
 
         int chairs = 40;
         System.out.println(chairs + 2); //42
         int moreChairs = chairs + 5;
         System.out.println(moreChairs); //45
+
+        System.out.println("---------------------------------------------");
 
         //Operator Precedence
             // "PEMMDAS"
@@ -88,6 +94,8 @@ public class day03_practice_tasks {//<--class package to create java program
         int output6 = 8 * 7 + (3 + 9);
         System.out.println("output6 = " + output6); //parentheses first than order left to right
 
+        System.out.println("---------------------------------------------");
+
         // number + number = addition
         //number + String = concatenation
         //String + String = concatenation
@@ -103,6 +111,9 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println((6 * 5) + 7 + " Cydeo "+ 2 + " " + (7 * 7)); //37 Cydeo 2 49
         System.out.println(7 * (30 / 10) + " Boogy " + 15 / 3 * (35 / 7)); //21 Boogy 25
 
+        System.out.println("---------------------------------------------");
+
+
         //Add One
 
         int num1 = 2_147_483_647;
@@ -110,6 +121,9 @@ public class day03_practice_tasks {//<--class package to create java program
 
         System.out.println("num1 = " + (num1 + 1)); //result - since out of int range
         System.out.println("num2 + " + (num2 + 1)); //result - since out of long range
+
+        System.out.println("---------------------------------------------");
+
 
         //Kilometers to miles
 
@@ -119,6 +133,7 @@ public class day03_practice_tasks {//<--class package to create java program
 
         System.out.println("10.5 Kilometers equals to " + milesToKilometers + " miles");
 
+        System.out.println("---------------------------------------------");
 
         //discount
 
@@ -129,6 +144,9 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println("Regular Price: $" + 100);
         System.out.println("Discount Amount: $" + discount);
         System.out.println("Sale Price: $" + salesPrice);
+
+        System.out.println("---------------------------------------------");
+
 
         //SwapTwoVariables1 using third variable
 
@@ -142,6 +160,9 @@ public class day03_practice_tasks {//<--class package to create java program
 
         System.out.println("num4 = " + num4);
         System.out.println("num5 = " + num5);
+
+        System.out.println("---------------------------------------------");
+
 
         //Swap 4 variables using a 5th variable
 
@@ -163,6 +184,9 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println("num8 = " + num8);
         System.out.println("num9 = " + num9);
 
+        System.out.println("---------------------------------------------");
+
+
         //SwapTwoVariables2 without using third variable
 
         int num10 = 10;
@@ -181,6 +205,137 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println("8" + 12 * 2 + 4); //8244
         System.out.println(4 + 17 % 2 + "Cydeo" + 1 + 5); //5Cydeo15
 
+        System.out.println("---------------------------------------------");
+
+        //Primitive Casting
+
+        /*
+        Implicit casting (Widening primitive conversion)
+        Explicit casting (Narrowing primitive conversion)
+
+        Implicit
+        Casting smaller prim types to larger prim types
+        Done automatically by compiler
+
+        byte-->short-->int-->long-->float-->double
+                   char-|
+         */
+
+        //ImplicitPractice
+         byte num15 = 25;
+         int num16;
+         num16 = num15;
+
+        System.out.println(num16);
+
+        System.out.println("---------------------------------------------");
+
+        double num17;
+        int num18 = 10;
+        num17 = num18;
+
+        System.out.println(num17);
+
+        System.out.println("---------------------------------------------");
+
+        /*
+        Explicit Casting (Narrowing Primitive Conversion)
+
+        Casting larger primtive types to smaller primitive types
+        There is a risk of losing data
+        Must be done explicitly (by programmer).
+
+        doubel-->float-->long-->int-->short-->byte
+                                 |--char
+
+         */
+
+        int b = 12;
+        byte a = (byte) b;
+        System.out.println(a);
+
+        System.out.println("---------------------------------------------");
+
+        long c = 14;
+        int e = (int) c;
+        System.out.println(e);
+
+        System.out.println("---------------------------------------------");
+
+        /*
+        Mixed Operations
+        Operation involving two different data types(besides byte and short),
+        the smaller is casted implicitly to the larger type.
+
+        byte and short are implicitly casted to int type before arithmetic operation
+
+            int x + int y       // returns int
+            int x - long y      // returns long
+            long x * float y    // returns float
+            float x / double y  // returns double
+            byte x + byte y     // returns int
+            byte x - short y    // returns int
+            int x * byte y      // returns int
+            short x / byte y    // returns in
+         */
+
+        System.out.println("---------------------------------------------");
+
+        /*
+        Shorthand(compound assignment) operators
+
+            Addition Assignment         x += y means x = x + y
+            Subtraction Assignment      x -= y means x = x – y
+            Multiplication Assignment   x *= y means x = x * y
+            Division Assignment         x /= y means x = x / y
+            Remainder Assignment        x %= y means x = x % y
+         */
+
+        System.out.println("-----------------------------------------------");
+
+        /* Operator Precedence
+
+        1 ( )                   Parentheses                                 Parentheses
+        2 * / %     Multiplication / Division / Modulus     Left to right   Arithmetic
+        3 + -       Addition / Subtraction                  Left to right   Arithmetic
+        4  =
+         += -=
+         *= /=
+           %=                       Assignment               Right to left   Assignment
+                    Addition assignment / Subtraction assignment
+                    Multiplication assignment / Division assignment
+                                 Modulus assignment
+         */
+
+
+        // Total Price
+
+        double price = 20.5;
+        int quantity = 4;
+
+        price *= quantity;
+
+        System.out.println("price = " + price);
+
+        System.out.println("-----------------------------");
+
+        int price1 = 50;
+        int quantity1 = 5;
+
+        price1 *= quantity1;
+
+        System.out.println("price = " + price1);
+
+        System.out.println("-----------------------------");
+
+        int x = 2, y = 3, z = 9;
+
+        y *= x + 5; //y = y * x + 5 = 21 (Assignment operator computes right to left)
+        z %= y; //z = z % y = 0
+        z += 2.5; //z = z + 2.5 = 11.5
+
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
 
 
     }
