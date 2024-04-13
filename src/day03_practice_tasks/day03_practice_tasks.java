@@ -337,6 +337,82 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println("y = " + y);
         System.out.println("z = " + z);
 
+        System.out.println("-----------------------------");
+
+        /*
+        Unary Operator
+
+        +   Unary Plus Operator     Indicates positive value
+        -   Unary Minus Operator    Negates an expression or value
+        ++  Increment Operator      Increments a value by 1
+        --  Decrement Operator      Decrements a value by 1
+        !   Logical Complement      Operator Inverts the value of a boolean variable
+
+        The unary plus (+) operator is used to indicate that a numeric value is positive.
+
+        The unary minus (-) operator is used to negate a numeric value, effectively changing its sign.
+         */
+
+        int h = 5;
+        int i = +h;
+
+        System.out.println(i);
+
+        System.out.println("-----------------------------");
+
+        int u = 10;
+        int t = -u + 5;
+
+        System.out.println(t);
+
+        System.out.println("-----------------------------");
+
+        int r = 24;
+        int f = +r + 30;
+        int m = -r + 45;
+
+        System.out.println(m);
+
+        System.out.println("-----------------------------");
+
+        /*
+       Increment (++) & Decrement (--)
+
+       Pre-Increment (++) & Pre-Decrement (--)
+        Increase or decrease then give me the number.
+        Post-Increment (++) & Post-Decrement (--)
+        Give me the number then increase or decrease.
+
+        Only for integral data types (int, short, byte, long, and char).
+         */
+
+        boolean isMarried = true;
+        boolean isEligible = false;
+
+        boolean results1 = !isMarried;
+        boolean results2 = !isEligible;
+
+        System.out.println(!isEligible);
+        System.out.println(!isMarried);
+
+        System.out.println("-----------------------------")
+
+        /*
+        1                ( )                 Parentheses                             Parentheses
+
+           2                ++ --               Unary post-increment / decrement        Left to Right
+           3                ++ --               Unary pre-increment / decrement
+                            + -                 Unary plus / minus                                          Unary
+                            !                   Unary logical negation
+                            ( type )            Unary type cast                         Right to left
+            4               * / %               Multiplication / Division / Modulus     Left to right
+            5               + -                 Addition / Subtraction                  Left to right       Arithmetic
+            6               =                   Assignment
+                            += -=               Addition assignment / Subtraction assignment
+                            *= /=               Multiplication assignment / Division assignment
+                            %=                  Modulus assignment                      Right to left       Assignment
+
+       /*
 
     }
 }
