@@ -73,8 +73,8 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println("---------------------------------------------");
 
         //Operator Precedence
-            // "PEMMDAS"
-                //1st. Parenthese(control evaluation) 2. Multiply 3. Modulus 4. Divide 5. Add 6. Subtract LEFT TO RIGHT
+        // "PEMMDAS"
+        //1st. Parenthese(control evaluation) 2. Multiply 3. Modulus 4. Divide 5. Add 6. Subtract LEFT TO RIGHT
 
         int output = 12 + 6 - 3; //arithmetics of same group so LEFT TO RIGHT
         System.out.println("output = " + output);
@@ -108,7 +108,7 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println(3 + 5 + " Cydeo " + 3 + 5); //8 Cydeo 35 (addition left to right then string then concat
         System.out.println(3 + 5 + " Cydeo " + (3 + 5)); //8 Cydeo 8 (addition parentheses then addition left to right than String
 
-        System.out.println((6 * 5) + 7 + " Cydeo "+ 2 + " " + (7 * 7)); //37 Cydeo 2 49
+        System.out.println((6 * 5) + 7 + " Cydeo " + 2 + " " + (7 * 7)); //37 Cydeo 2 49
         System.out.println(7 * (30 / 10) + " Boogy " + 15 / 3 * (35 / 7)); //21 Boogy 25
 
         System.out.println("---------------------------------------------");
@@ -222,9 +222,9 @@ public class day03_practice_tasks {//<--class package to create java program
          */
 
         //ImplicitPractice
-         byte num15 = 25;
-         int num16;
-         num16 = num15;
+        byte num15 = 25;
+        int num16;
+        num16 = num15;
 
         System.out.println(num16);
 
@@ -395,7 +395,7 @@ public class day03_practice_tasks {//<--class package to create java program
         System.out.println(!isEligible);
         System.out.println(!isMarried);
 
-        System.out.println("-----------------------------")
+        System.out.println("-----------------------------");
 
         /*
         1                ( )                 Parentheses                             Parentheses
@@ -412,7 +412,50 @@ public class day03_practice_tasks {//<--class package to create java program
                             *= /=               Multiplication assignment / Division assignment
                             %=                  Modulus assignment                      Right to left       Assignment
 
-       /*
+       */
+
+        //Find output of the compound expressions below
+        int Kepler = 10;
+        int Kiana = 22;
+
+        System.out.println(Kepler++ + Kepler); //21
+        System.out.println(Kepler++ + ++Kiana); //34
+        System.out.println(++Kepler % 5); //3
+
+        System.out.println("-----------------------------");
+
+        //Guess the result of each statement and then write a program to calculate them
+
+        //1
+        int xy = 2;
+        int yx = xy++;
+        int yxy = xy++ + 2;
+        System.out.println(yx); //2
+        System.out.println(yxy); //5
+
+        System.out.println("-----------------------------");
+
+        //2
+        int yz = 2;
+        System.out.println(yz++); //2
+
+        System.out.println("-----------------------------");
+
+        //3
+        int qu = 2;
+        System.out.println(--qu); //1
+
+        System.out.println("-----------------------------");
+
+        //4
+        int qi = 8;
+        int qo = qi--;
+        System.out.println(qo); //8
+
+        System.out.println("-----------------------------");
+
+
 
     }
+
 }
