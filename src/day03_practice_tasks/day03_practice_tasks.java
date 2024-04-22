@@ -454,7 +454,10 @@ public class day03_practice_tasks {//<--class package to create java program
 
         System.out.println("-----------------------------");
 
-
+        //Task2 UnaryOperators
+        int yu = 10;
+        yu = --yu + yu++ + yu-- + yu++;
+        System.out.println(yu);
 
     }
 
